@@ -1,0 +1,91 @@
+header div{
+	background: #D5F1F0; /*rgba(112, */
+	height:  100px;
+}
+
+
+body {
+	background: #69C4CC;
+}
+
+#navcrumbs{
+	background-color: #D5F1F0;
+}
+
+.breadcrumbs{
+	/*float: right;*/
+	background-color: #D5F1F0;
+	margin: -100px 0 0 0;
+	z-index: 999;
+
+
+}
+
+
+
+#navbar{
+	background-color:  #F3CECD;
+	color:  #6F1549;
+	margin:  -29px  -20px 18px  -20px;
+	padding: 2px 0 15px 0;
+	height:  30px;
+	/*min-width:  700px;
+	z-index: 999; */
+}
+
+
+
+
+/*.container-fluid {
+	background: #CFEFEE;
+}*/
+
+#topbg {
+	background-color:  white;
+	border-radius:  25px 25px 0 0;
+	margin:  -70px  0 15px 10px;
+	padding:  0 100px 0 0;
+}
+
+.row{
+	border-style: dotted;
+	border-color: green;
+}
+.row2{
+	border-style: dotted;
+	border-color: red;
+}
+/*#centerbg {
+	background-color:  white;
+	height:  670px;
+	/*width:  90%;
+	border-radius:  0 0 25px 25px;
+	margin:  -99px  0 15px 10px;
+	padding:  0 100px 0 0;
+
+
+}*/
+
+.btn-about {
+	background: #69C4CC;
+	border-color: #69C4CC;
+	color: White;
+}
+
+.btn-contact {
+	background: #99CC33;
+	border-color: #99CC33;
+	color: White;
+}
+
+.btn-blog {
+	background: #6F308B;
+	border-color: #6F308B;
+	color: White;
+}
+
+.btn-press {
+	background: #E9168C;
+	border-color: #E9168C;
+	color: White;
+}
