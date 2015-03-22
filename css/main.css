@@ -9,15 +9,21 @@ body {
 	background: #69C4CC;
 }
 
-h2{
-	color:  #8db639;
-}
+
 h3 {
-	color:   #6F1549;
+	color:   #8db639;
 }
 
 .h3{ display: inline-block;
 
+}
+
+li {
+	list-style-type: none;
+}
+
+.bg-primary{
+  background-color: white;
 }
 
 #navcrumbs{
@@ -40,9 +46,10 @@ h3 {
 	color:  #6F1549;
 	margin:  -29px  -20px 18px  -20px;
 	padding: 2px 0 15px 0;
-	height:  30px;
-	min-width:  700px;
+	height:  20px;
 	z-index: 999;
+	font-weight: bolder;
+	font-size: 1em;
 }
 
 
@@ -52,6 +59,12 @@ h3 {
 	background: #CFEFEE;
 }*/
 
+#dotted_div{
+	background-image:  url("/images/homepage/dotted_line_44x9.png");
+     background-repeat: repeat-x;
+
+}
+
 #topbg {
 	background-color:  white;
 	border-radius:  25px 25px 0 0;
@@ -59,14 +72,15 @@ h3 {
 	padding:  0 100px 0 0;
 }
 
-.row{
+/*.row{
 	border-style: dotted;
 	border-color: green;
 }
 .row2{
 	border-style: dotted;
 	border-color: red;
-}
+}*/
+
 #centerbg {
 	background-color:  white;
 	height:  670px;
