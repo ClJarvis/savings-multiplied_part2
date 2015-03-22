@@ -1,3 +1,4 @@
+
 header div{
 	background: #D5F1F0; /*rgba(112, */
 	height:  100px;
@@ -6,6 +7,10 @@ header div{
 
 body {
 	background: #69C4CC;
+}
+
+h2{
+	color:  #8db639
 }
 
 #navcrumbs{
@@ -29,8 +34,8 @@ body {
 	margin:  -29px  -20px 18px  -20px;
 	padding: 2px 0 15px 0;
 	height:  30px;
-	/*min-width:  700px;
-	z-index: 999; */
+	min-width:  700px;
+	z-index: 999;
 }
 
 
