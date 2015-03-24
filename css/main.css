@@ -1,3 +1,23 @@
+@border-radius-base:             4px;
+@border-radius-large:            6px;
+@border-radius-small:            3px;
+
+.border-top-radius(@radius) {
+  border-top-right-radius: @radius;
+   border-top-left-radius: @radius;
+}
+.border-right-radius(@radius) {
+  border-bottom-right-radius: @radius;
+     border-top-right-radius: @radius;
+}
+.border-bottom-radius(@radius) {
+  border-bottom-right-radius: @radius;
+   border-bottom-left-radius: @radius;
+}
+.border-left-radius(@radius) {
+  border-bottom-left-radius: @radius;
+     border-top-left-radius: @radius;
+}
 
 header div{
 	background: #D5F1F0; /*rgba(112, */
@@ -7,8 +27,12 @@ header div{
 
 body {
 	background: #69C4CC;
+	color: #8db639;
 }
 
+div {
+	border: 1px dashed black;
+}
 
 h3 {
 	color:   #8db639;
@@ -18,34 +42,27 @@ h3 {
 
 }
 
+
+
 li {
 	list-style-type: none;
 }
 
 .bg-primary{
   background-color: white;
-}
-
-#navcrumbs{
-	background-color: #D5F1F0;
-}
-
-.breadcrumbs{
-	/*float: right;*/
-	background-color: #D5F1F0;
-	margin: -100px 0 0 0;
-	z-index: 999;
-
+  	color: black !important;
 
 }
 
+
+#sort_results{
+	width: 25%;
+}
 
 
 #navbar{
 	background-color:  #F3CECD;
 	color:  #6F1549;
-	margin:  -29px  -20px 18px  -20px;
-	padding: 2px 0 15px 0;
 	height:  20px;
 	z-index: 999;
 	font-weight: bolder;
@@ -53,35 +70,21 @@ li {
 }
 
 
-
-
-/*.container-fluid {
-	background: #CFEFEE;
-}*/
-
 #dotted_div{
 	background-image:  url("/images/homepage/dotted_line_44x9.png");
      background-repeat: repeat-x;
 
 }
 
-#topbg {
+/*#topbg {
 	background-color:  white;
 	border-radius:  25px 25px 0 0;
 	margin:  -70px  0 15px 10px;
 	padding:  0 100px 0 0;
-}
-
-/*.row{
-	border-style: dotted;
-	border-color: green;
-}
-.row2{
-	border-style: dotted;
-	border-color: red;
 }*/
 
-#centerbg {
+
+/*#centerbg {
 	background-color:  white;
 	height:  670px;
 	border-radius:  0 0 25px 25px;
@@ -89,12 +92,37 @@ li {
 	padding:  0 100px 0 0;
 
 
+}*/
+
+/* BORDERS FOR VISUAL LOCATION */
+
+.row{
+	border-style: dotted;
+	border-color: green;
 }
+
+#red{
+	border-style: dotted;
+	border-color: red;
+}
+#blue{
+	border-style: dotted;
+	border-color: blue	;
+}
+.R{
+	border-style: dotted;
+	border-color: red;
+}
+
+
+/* BUTTONS */
 
 .btn-about {
 	background: #69C4CC;
 	border-color: #69C4CC;
 	color: White;
+
+
 }
 
 .btn-contact {

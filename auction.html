@@ -12,10 +12,11 @@
 <!-- Optional theme -->
 <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
-
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 
 
 <link rel="stylesheet" href="css/main.css">
+<link rel="stylesheet" href="css/auction.css">
 
 <!-- Latest compiled and minified JavaScript -->
 
@@ -48,8 +49,7 @@
     <div class="col-md-1"></div>
     <div class="col-md-1"></div>
     <div class="col-md-1"></div>
-    <div class="col-md-1"></div>
-    <div class="col-md-1">
+    <div class="col-md-2">
       <a href="#">Sign in</a> |
        <a href="#">Sign up</a>
 
@@ -93,21 +93,185 @@
     <div class="col-md-1">Links</div>
 
      <div class="col-md-2">Community</div>
-    <div class="col-md-1">search</div>
+    <div class="col-md-1">search<i class="fa fa-search"></i></div>
     <div class="col-md-1"></div>
 
 
   </div> <!-- NAVBAR -->
 
+
+
   <div class="row bg-primary"> <!--main row for bottom section -->
-	   <div class=".col-xs-12 .col-sm-6 .col-md-8" id="footer"><!--col for bottom section -->
-
-
-	   </div ><!--col for bottom section -->
+	  <div class=".col-xs-12 .col-sm-6 .col-md-8" id="bottom_body"><!--auction page bottom body -->
+	  </div><!--auction page bottom body -->
 
    </div> <!--main row for bottom section -->
 
+<div class="row"  id="blue"><!-- Start of row sort results row -->
 
+  <div class=".col-xs-12 .col-sm-6 .col-md-8">    ALL > Twin > BG</div><br><!--results nav -->
+  <div class="col-md-4" id="blue"><!--form div -->
+	<form>
+		 <div class="form-group" id="sort_results"><!--sort menu div -->
+		 	Sort By: <select class="form-control">
+			  <option>Price</option>
+			  <option>Brand</option>
+			  <option>Condition</option>
+			</select>
+		</div><!--sort menu div -->
+	</form>
+	</div><!-- form div end -->
+	<div class="col-md-4"  id="blue"></div>
+	<div class="col-md-4"  id="blue">prev. | page num. | next | view all</div>
+</div><!-- end of row sort results row -->
+<!--FORM PANEL -->
+<div class="row"  id="red"><!--row -->
+  	<div class="col-md-2"  id="form_panel"><!--form panel div-->
+  		<form id="form_panel">
+  			<u>Limit Your Search by:</u><br>
+
+  			<input type="search" class="form-control"> <button type="submit" class="btn btn-default">Search</button>
+
+  			<div class="radio">
+				  Condition: <label>
+				    <input type ="radio" name="condition" value="New">New<br>
+				  </label>
+				</div>
+				<div class="radio">
+				  <label>
+				    <input type ="radio" name="condition" value="Gently_Used">Gently Used<br>
+				  </label>
+				</div>
+
+
+				  Size: <br>
+				  <label class="radio-inline">
+				    <input type="radio" name="inlineRadioOptions" id="inlineRadio4"value="4">4
+				  </label>
+
+				  <label class="radio-inline">
+				    <input type="radio" name="inlineRadioOptions" id="inlineRadio8"value="8">8
+				  </label></br>
+
+				<label class="radio-inline">
+				    <input type="radio" name="inlineRadioOptions" id="inlineRadio5" value="5">5</label>
+
+				  <label class="radio-inline">
+				    <input type="radio" name="inlineRadioOptions" id="inlineRadio9"value="9">9</label><br>
+
+				    <label class="radio-inline">
+				    <input type="radio" name="inlineRadioOptions" id="inlineRadio6" value="6">6</label>
+
+				  <label class="radio-inline">
+				    <input type="radio" name="inlineRadioOptions" id="inlineRadio10"value="10">10</label><br>
+
+				<label class="radio-inline">
+				    <input type="radio" name="inlineRadioOptions" id="inlineRadio7"value="7">7</label>
+
+				  <label class="radio-inline">
+				    <input type="radio" name="inlineRadioOptions" id="inlineRadio11"value="11">11</label><br>
+				<P>
+
+				<div class="radio">
+				  Seasons:<br> <label>
+				    <input type ="radio" name="seasons" value="all_seasons">All Seasons
+				  </label>
+				</div>
+				<div class="radio">
+				  <label>
+				    <input type ="radio" name="seasons" value="spring">Spring<br>
+				  </label>
+				</div>
+				<div class="radio">
+				<label>
+				    <input type ="radio" name="seasons" value="Summer">Summer</label>
+				</div>
+				<div class="radio">
+				  <label>
+				    <input type ="radio" name="seasons" value="Fall">Fall<br> </label>
+				</div>
+				<div class="radio">
+				<label>
+				    <input type ="radio" name="seasons" value="Wnter">Winter</label>
+				</div><P>
+
+				<div class="radio">
+				  Type:<br> <label>
+				    <input type ="radio" name="type" value="any">Any</label></div>
+				<div class="radio">
+				  <label>
+				    <input type ="radio" name="type" value="one_piece">One-piece<br>
+				  </label>
+				</div>
+				<div class="radio">
+				<label>
+				    <input type ="radio" name="type" value="tops">Tops</label>
+				</div>
+				<div class="radio">
+				  <label>
+				    <input type ="radio" name="type" value="bottom">Bottoms<br> </label>
+				</div>
+
+
+		 <div class="form-group" id="Limit_search"><!--sort menu div -->
+		 	Brand: <select class="form-control">
+			  <option>Jack and Jill</option>
+			  <option>Rugrats</option>
+			  <option>li'l Rascals</option>
+			</select>
+		</div><!--sort menu div -->
+		</form>
+
+
+
+
+
+
+
+
+  	</div><!--form panel div-->
+
+
+  <!--RESULTS BOX -->
+
+
+  	<div class="col-md-4"> <!--api box -->
+
+
+<div class="panel panel-default">
+  <div class="panel-body">
+    Basic panel example
+  </div>
+</div>
+
+<div class="panel panel-default">
+  <div class="panel-body">
+    Basic panel example
+  </div>
+</div>
+
+<div class="panel panel-default">
+  <div class="panel-body">
+    Basic panel example
+  </div>
+</div>
+
+<div class="panel panel-default">
+  <div class="panel-body">
+    Basic panel example
+  </div>
+</div>
+
+<div class="panel panel-default">
+  <div class="panel-body">
+    Basic panel example
+  </div>
+</div>
+
+  	</div><!--api box -->
+
+
+</div><!-- end row -->
 
 
 
