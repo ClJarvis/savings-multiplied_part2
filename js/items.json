@@ -1,0 +1,18 @@
+{
+	"items":{
+		"0":{
+			"image": "url",
+			"title": "The Hobbit Novel",
+			"price": "24.99",
+			"seller": "Jeff Walker",
+			"endDate": "march 31"
+		},
+		"1":{
+			"image": "url",
+			"title": "Fellowship of the Ring",
+			"price": "34.99",
+			"seller": "Jeff Walker",
+			"endDate": "April 2"
+		}
+	}
+}
