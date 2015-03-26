@@ -1,45 +1,35 @@
 /* https://savingsmultipliedssh.firebaseio.com/items.json */
 
-// +$(document).ready(function{
-// +$('#myTab a').click(function (e) {
-// +  e.preventDefault()
-// +  $(this).tab('show')
-// +})
-// +
-// +});
-
-// var base_url = "https://savingsmultipliedssh.firebaseio.com/items.json";
-
-
-function getResults($scope, $http) {
-  $http.get('https://savingsmultipliedssh.firebaseio.com/items.json')
-  .success(function(data) { $scope.items = data.items; })
-  .error(function(data) { console.log('error'); });
-  console.log($scope.items);
-}
-
 function getResults(){
-$.ajax({
-  url: "https://savingsmultipliedssh.firebaseio.com/items.json",
-  dataType:"jsonp",
-  success:function(data){
-  // console.log(data.items.image);
-  // console.log(data.index);
-  var item=data.items;
-   }
- })
-}
 
-var i;
-var myResults = "https://savingsmultipliedssh.firebaseio.com/items.json";
-for (var i=0; i < myResults.length; i++) {
-  // console.log(myResults[i]);
+	// console.log(myResults);
+	$.ajax({
+	  url: "https://savingsmultipliedssh.firebaseio.com/items.json",
+	  dataType:"jsonp",
+	  success:function(data){
+	  	for (var i=0; i < data.length; i++) {
+	  		console.log(data[i].price);
+			$("#searchResults").append("<div class='col-md-3'>" + "<img src=" + data[i].image + " width='110' height='90'>" + data[i].title + data[i].price + data[i].seller + data[i].endDate + "</div>");
+		}
+	    }
+	  });
 }
 
 getResults();
+// var myResults = "https://savingsmultipliedssh.firebaseio.com/items.json";
 
-// LOOP over array
-// console.log(scope.items)
 
-// ['giv','wh','th'].map(p=>`${p}en`).join('.');
-// [for (p of ['giv','wh','th']) `${p}en`].join('.');
+
+// $(document).ready(function() {
+//   $.get("https://nss-demo-instructor.firebaseio.com/foods.json",
+//     function (foods) {
+//       var foodSection = $(".foods"),
+//           begin = "<div>",
+//           end = "</div>";
+
+//       foods.forEach(function (food) {
+//         foodSection.append(begin + food.name + end);
+//       })
+//     }
+//   )
+// });
