@@ -8,7 +8,7 @@ function getResults(){
 	  success:function(data){
 	  	for (var i=0; i < data.length; i++) {
 	  		console.log(data[i].price);
-			$("#searchResults").append("<div class='col-md-3'>" + "<img src=" + data[i].image + " width='110' height='90'>" + data[i].title + data[i].price + data[i].seller + data[i].endDate + "</div>");
+			$("#searchResults").append("<div class='col-md-3'>" + "<img src=" + data[i].image + " width='150' height='150'><br>" + data[i].title + '<br>' + data[i].price + '<br>' + data[i].seller + '<br>' + data[i].endDate + '<br>' + "</div>");
 		}
 	    }
 	  });
