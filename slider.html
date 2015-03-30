@@ -1,0 +1,25 @@
+<!--min input slider-->
+<div class ="slider">
+	<label for "minDate">Ending Soonest</label>
+	<input type="range" min=0 max=30 value=1 id="minDate " step="10" oninput="nss.outputUpdate(value, id)">
+	<output for="minDate" id="js-minDate">1</output>
+</div>
+
+<!-- Max price input -->
+<div class ="slider">
+	<label for "maxDate">Ending Later</label>
+	<input type="range" min=0 max=30 value=1 id="maxDate" step="10" oninput="nss.outputUpdate(value, id)">
+	<output for="maxDate" id="js-maxDate">1</ouput>
+</div>
+
+<script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
+
+	<script>
+		var nss = {};
+		$(document).ready(function(){
+			nss.outputUpdate = function(date, id){
+				$('#js-' + id).val(date);
+			}
+
+		});
+</script>

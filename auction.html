@@ -129,8 +129,20 @@
   	<div class="col-md-2"  id="form_panel"><!--form panel div-->
   		<form id="form_panel">
   			<u>Limit Your Search by:</u><br>
+  			<div class ="slider">
+	<label for "min-price">Minimum Price</label>
+	<input type="range" min=0 max=500 value=25 id="minPrice " step="10" oninput="nss.outputUpdate(value, id)">
+	<output for="minPrice" id="js-minPrice">25</output>
+</div>
 
-  			<input type="search" class="form-control"> <button type="submit" class="btn btn-default">Search</button>
+<!-- Max price input -->
+<div class ="slider">
+	<label for "maxPrice">Maximum Price</label>
+	<input type="range" min=0 max=500 value=25 id="maxPrice" step="10" oninput="nss.outputUpdate(value, id)">
+	<output for="maxPrice" id="js-maxPrice">25</ouput>
+</div>
+<!--
+  			<input type="search" class="form-control"> <button type="submit" class="btn btn-default">Search</button> -->
 
   			<div class="radio">
 				  Condition: <label>

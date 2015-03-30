@@ -15,6 +15,14 @@ function getResults(){
 }
 
 getResults();
+
+var nss = {};
+		$(document).ready(function(){
+			nss.outputUpdate = function(price, id){
+				$('#js-' + id).val(price);
+			}
+
+		});
 // var myResults = "https://savingsmultipliedssh.firebaseio.com/items.json";
 
 
